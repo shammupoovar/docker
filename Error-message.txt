@@ -1,4 +1,3 @@
-Creating network "visits_default" with the default driver
 Building node-app
 Step 1/6 : FROM node:alpine
  ---> 5206c0dd451a
@@ -12,23 +11,26 @@ Step 4/6 : RUN npm install
  ---> Using cache
  ---> 025e7bd5e569
 Step 5/6 : COPY . .
- ---> Using cache
- ---> da37e439bdbf
+ ---> 7dae10c19c83
 Step 6/6 : CMD ["npm","start"]
- ---> Using cache
- ---> 6aa1aae9a6ec
-Successfully built 6aa1aae9a6ec
-Successfully tagged visits_node-app:latest
-Creating visits_node-app_1 ...
+ ---> Running in 1a8ce5c5c8ef
+Removing intermediate container 1a8ce5c5c8ef
+ ---> 50d0d1246ef9
+Successfully built 50d0d1246ef9
+Successfully tagged visists_node-app:latest
+Creating visists_redis-server_1 ...
+Creating visists_node-app_1 ...
 
-ERROR: for visits_node-app_1  __init__() got an unexpected keyword argument 'cpu_count'
-Creating visits_redis-server_1 ...
+ERROR: for visists_redis-server_1  __init__() got an unexpected keyword argument
+ 'cpu_count'
 
-ERROR: for visits_redis-server_1  __init__() got an unexpected keyword argument 'cpu_count'
+ERROR: for visists_node-app_1  __init__() got an unexpected keyword argument 'cp
+u_count'
 
 ERROR: for node-app  __init__() got an unexpected keyword argument 'cpu_count'
 
-ERROR: for redis-server  __init__() got an unexpected keyword argument 'cpu_count'
+ERROR: for redis-server  __init__() got an unexpected keyword argument 'cpu_coun
+t'
 Traceback (most recent call last):
   File "docker-compose", line 3, in <module>
   File "compose\cli\main.py", line 68, in main
